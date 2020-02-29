@@ -49,6 +49,5 @@ namespace GeometricObjectsSolution
             get { return _Value; }
             set { _Value = value; }
         }    
-              //sd   sdsd    df
     }
 }
