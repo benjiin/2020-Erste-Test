@@ -76,6 +76,15 @@ namespace GeometricObjectsSolution
             return 0;
         }
 
+        public long Add(int zahl1, int zahl2, params int[] list)
+        {
+            long sum = zahl1 + zahl2;
+            foreach(int z in list)
+            {
+                sum += z;
+            }
+            return sum;
+        }
     }
 
 }
