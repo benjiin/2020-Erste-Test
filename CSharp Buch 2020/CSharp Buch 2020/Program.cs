@@ -6,8 +6,17 @@ namespace CSharp_Buch_2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            Person peter = new Person();
+            peter.Name = "Peter";
+            peter.Alter = 34;
+
+            peter.Laufen();
+
+
+            Console.WriteLine(peter.Name);
+            Console.ReadKey();
         }
     }
+
+
 }
