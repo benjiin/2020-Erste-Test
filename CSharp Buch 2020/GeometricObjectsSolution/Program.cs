@@ -6,7 +6,13 @@ namespace GeometricObjectsSolution
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Circle kreis1 = new Circle();
+            Circle kreis2 = kreis1;
+            kreis2.Radius = 20;
+            kreis2 = null;
+
+            Console.WriteLine(kreis1.Radius);
+            Console.ReadKey();
         }
     }
 }
