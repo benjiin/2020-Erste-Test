@@ -6,17 +6,17 @@ namespace GeometricObjectsSolution
 {
     public class Circle
     {
-		private int _Radius;
+        private int _Radius;
 
-		public int Radius
-		{
+        public int Radius
+        {
             get
             {
                 return _Radius;
             }
             set
             {
-                if (value >= 0)
+                if(value >= 0)
                 {
                     _Radius = value;
                 }
@@ -42,12 +42,40 @@ namespace GeometricObjectsSolution
             set { _XCoordinate = value; }
         }
 
-        private int _Value;
-
-        public int Value
+        //Methoden
+        public double GetArea()
         {
-            get { return _Value; }
-            set { _Value = value; }
-        }    
+            return Math.Pow(Radius, 2) * Math.PI;
+        }
+        public double GetCircumference()
+        {
+            return 2 * Radius * Math.PI;
+        }
+        public void Move(double dx, double dy)
+        {
+            XCoordinate += dx;
+            YCoordinate += dy;
+        }       
+        public void Move(double dx, double dy, int dRadius)
+        {
+            XCoordinate += dx;
+            YCoordinate += dy;
+            Radius += dRadius;
+        }
+
+        public int Bigger(Circle kreis)
+        { 
+            if(kreis == null || Radius > kreis.Radius)
+            {
+                return 1;
+            }
+            if(Radius < kreis.Radius)
+            {
+                return -1;
+            }
+            return 0;
+        }
+
     }
+
 }

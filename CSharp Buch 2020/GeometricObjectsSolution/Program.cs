@@ -6,12 +6,16 @@ namespace GeometricObjectsSolution
     {
         static void Main(string[] args)
         {
-            Circle kreis1 = new Circle();
-            Circle kreis2 = kreis1;
-            kreis2.Radius = 20;
-            kreis2 = null;
+            Circle kreis = new Circle();
+            kreis.Radius = 12;
+            kreis.XCoordinate = 12;
+            kreis.YCoordinate = 12;
+            kreis.Move(11, 11);
+            kreis.Move(0, 0, 1);
 
-            Console.WriteLine(kreis1.Radius);
+
+            Console.WriteLine();
+
             Console.ReadKey();
         }
     }
