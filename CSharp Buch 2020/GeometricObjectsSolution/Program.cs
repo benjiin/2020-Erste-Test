@@ -22,7 +22,7 @@ namespace GeometricObjectsSolution
 
             Console.WriteLine(kreis.Add(zahl1: testi, zahl2: testi));
 
-            Console.ReadKey();
+            Console.ReadKey();          
         }
     }
 }

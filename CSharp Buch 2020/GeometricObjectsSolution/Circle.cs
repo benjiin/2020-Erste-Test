@@ -8,6 +8,18 @@ namespace GeometricObjectsSolution
     {
         private int _Radius;
 
+        public Circle() 
+        {
+            Radius = radius;
+        }
+
+        public Circle(int radius, double x, double y)
+        {
+            XCoordinate = x;
+            YCoordinate = y;
+            Radius = radius;
+        }
+
         public int Radius
         {
             get
